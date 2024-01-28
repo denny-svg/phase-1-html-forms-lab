@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>My Awesome Company Contact Page</title>
   </head>
   <body>
@@ -11,38 +11,46 @@
     <h2>For all your incorporated company needs</h2>
 
     <!-- First, create a form tag where our inputs will be nested -->
+      <form class="#" method="post">
 
+       <!-- Add a text input with the id and name attributes set to 'fullname' -->
+       <!-- Include the place holder text "Enter Name" and make this input required -->
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter Name Here" required>
+        <br>
+       
+      
+       <!-- Add a email input with the id and name attributes set to 'email' -->
+       <!-- Include the place holder text "Enter Email" and make this input required -->
 
-      <!-- Add a label for 'fullname'-->
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Enter Email Here" required>
+        <br>
+        <!-- Add a label for 'phone'-->
+       <!-- Add a telephone input with the id and name attributes set to 'phone' -->
+       <!-- Include the place holder text "Enter Telephone (optional)" -->
 
-      <!-- Add a text input with the id and name attributes set to 'fullname' -->
-      <!-- Include the place holder text "Enter Name" and make this input required -->
+        <label for="telephone">Telephone:</label>
+        <input type="text" id="telephone" name="telephone" placeholder="Enter Telephone Here" optional>
+        <br>
+       
+       <!-- Add a label for 'message'-->
 
+       <!-- Add a textarea tag with the id and name attributes set to 'message' -->
+       <!-- Include the place holder text "Enter Message" -->
 
-      <!-- Add a label for 'email'-->
+        <label for="message">Message:</label>
+        <textarea type="text" id="message" name="message" placeholder="Enter Message Here" required>
+        <br>
+       <!-- Add a checkbox input with the id set to 'checkbox' -->
 
-      <!-- Add a email input with the id and name attributes set to 'email' -->
-      <!-- Include the place holder text "Enter Email" and make this input required -->
+        <label for="subscribe">Subscribe to our newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <br>
+        <!--Submit Button-->
+        <!-- Add an input with the type set to 'submit' -->
 
-
-      <!-- Add a label for 'phone'-->
-
-      <!-- Add a telephone input with the id and name attributes set to 'phone' -->
-      <!-- Include the place holder text "Enter Telephone (optional)" -->
-
-
-      <!-- Add a label for 'message'-->
-
-      <!-- Add a textarea tag with the id and name attributes set to 'message' -->
-      <!-- Include the place holder text "Enter Message" -->
-
-
-      <!-- Add a checkbox input with the id set to 'checkbox' -->
-
-
-
-      <!-- Add an input with the type set to 'submit' -->
-
-    
+        <input type="submit" value=" Submit">
+        </form>
   </body>
 </html>
